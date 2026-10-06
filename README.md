@@ -48,3 +48,11 @@ right insurance to carry, even if this sample can't price it. A conclusive test 
 **Research.** Honest partial — a reverse test that confirms a mechanism's *sign* while being candid that the sample
 can't prove its *size*. Scale-free scorecard (Sharpe, skew) plus equal-risk drawdown, causal vol-scaling, Alpaca SIP
 daily total return. No live capital.
+
+## Planned v2 leg — inverse-vol mean-reversion (inversion B)
+
+Backwards showed vol-scaling helps *momentum* (de-lever when vol is high). The mirror test (`backwards_2`): apply the
+*inverse* to a mean-reversion book (short-term reversal / pairs), **scaling position size UP when realized vol spikes
+above its 6-month average** — momentum needs calm to trend, but mean-reversion often thrives in high vol. Honest null: if
+it fails, the friction/decay assumptions hold; if it succeeds, it's a regime-dependent sizing alpha. (Folded from the
+batch-3 inversion set.)
